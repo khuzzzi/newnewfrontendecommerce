@@ -90,6 +90,7 @@ const Home = () => {
                             homeProducts.map((item) => {
                                 return (
                                     <Item 
+                                        key={item._id}
                                         itemname={item.productName} 
                                         itemprice={item.price} 
                                         itempicsrc={item.productImages} 
@@ -120,6 +121,7 @@ const Home = () => {
                             homeProducts.map((item) => {
                                 return (
                                     <Item 
+                                        key={item._id}
                                         itemname={item.productName} 
                                         itemprice={item.price} 
                                         itempicsrc={item.productImages} 
@@ -133,6 +135,7 @@ const Home = () => {
                             homeProducts.map((item) => {
                                 return (
                                     <Item 
+                                        key={item._id}
                                         itemname={item.productName} 
                                         itemprice={item.price} 
                                         itempicsrc={item.productImages} 
@@ -146,6 +149,7 @@ const Home = () => {
                             homeProducts.map((item) => {
                                 return (
                                     <Item 
+                                        key={item._id}
                                         itemname={item.productName} 
                                         itemprice={item.price} 
                                         itempicsrc={item.productImages} 
@@ -171,7 +175,6 @@ const Home = () => {
                             </div>
                             <p className='text-sm font-bold font-poppins'>FREE AND FAST DELIVERY</p>
                             <p className='font-poppins'>Free delivery for all orders above 150$</p>
-                            <p></p>
                         </div>
                         <div className='flex flex-col gap-5 min-w-[23%] h-[35vh]  items-center justify-center'>
                             <div className='flex items-center justify-center bg-black h-[12vh] w-[8vw] rounded-full max-sm:min-w-[35vw]'>
@@ -179,7 +182,6 @@ const Home = () => {
                             </div>
                             <p className='text-sm font-bold font-poppins'>FREE AND FAST DELIVERY</p>
                             <p className='font-poppins'>Free delivery for all orders above 150$</p>
-                            <p></p>
                         </div>
                         <div className='flex flex-col gap-5 min-w-[23%] h-[35vh]  items-center justify-center'>
                             <div className='flex items-center justify-center bg-black h-[12vh] w-[8vw] rounded-full max-sm:min-w-[35vw]'>
@@ -187,7 +189,6 @@ const Home = () => {
                             </div>
                             <p className='text-sm font-bold font-poppins'>FREE AND FAST DELIVERY</p>
                             <p className='font-poppins'>Free delivery for all orders above 150$</p>
-                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -198,3 +199,4 @@ const Home = () => {
 };
 
 export default Home;
+``
