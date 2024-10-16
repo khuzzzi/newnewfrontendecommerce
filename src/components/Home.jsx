@@ -2,13 +2,13 @@ import React from 'react';
 import Header from "./Header";
 import Footer from "./Footer";
 import { FaAngleRight } from "react-icons/fa6";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"; // Make sure this path is correct according to your project structure
+// import {
+//     Carousel,
+//     CarouselContent,
+//     CarouselItem,
+//     CarouselNext,
+//     CarouselPrevious,
+// } from "@/components/ui/carousel"; // Make sure this path is correct according to your project structure
 // import banner from "";
 // import iphoneBanner from "./public/images/iconic_STORY_LEVEL_BANNER_1600x483.jpg";
 import Item from "./Item";
@@ -51,33 +51,7 @@ const Home = () => {
                         </div>
                         {/* left area for mobiles */}
 
-                        {/* Carousel Items */}
-                        {/* <div className="relative w-[70%] h-full flex items-center justify-center max-sm:flex-col max-sm:w-[85%] ">
-                            <Carousel className="w-[60%] h-full max-w-[1000px] max-sm:w-full max-sm:h-auto">
-                                <CarouselContent>
-                                    <CarouselItem className="w-full h-full max-sm:h-auto">
-                                        <img src={banner} alt="Banner" className="w-full h-full object-cover max-sm:w-full max-sm:h-auto" />
-                                    </CarouselItem>
-                                    <CarouselItem className="w-full h-full max-sm:h-auto">
-                                        <img src={iphoneBanner} alt="iPhone Banner" className="w-full h-full object-cover max-sm:w-full max-sm:h-auto" />
-                                    </CarouselItem>
-                                    <CarouselItem className="w-full h-full max-sm:h-auto">
-                                        <img src={banner} alt="Banner" className="w-full h-full object-cover max-sm:w-full max-sm:h-auto" />
-                                    </CarouselItem>
-                                </CarouselContent>
-
-                                {/* Carousel controls */}
-                                <div className="absolute inset-y-0 left-0 flex items-center max-sm:hidden">
-                                    <CarouselPrevious className="bg-gray-200 rounded-full p-2" />
-                                </div>
-                                <div className="absolute inset-y-0 right-0 flex items-center max-sm:hidden">
-                                    <CarouselNext className="bg-gray-200 rounded-full p-2" />
-                                </div>
-                            </Carousel>
-                        </div> */}
-
-                    </div>
-
+                        
                     {/* Flash Sales section */}
                     <div className='w-[80%] ml-[5%] mt-10 h-10 flex gap-10 font-bold max-sm:flex-col'>
                         <h1 className='text-3xl'>Flash Sales</h1>
