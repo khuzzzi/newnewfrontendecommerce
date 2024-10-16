@@ -17,10 +17,9 @@ import { TbTruckDelivery } from 'react-icons/tb';
 import { useSelector } from 'react-redux';
 
 const Home = () => {
-  
-
-    const {homeProducts} = useSelector((state)=>state.homeProducts)
-    console.log(homeProducts)
+    const { homeProducts } = useSelector((state) => state.homeProducts);
+    console.log(homeProducts);
+    
     return (
         <>
             <Header />
@@ -49,10 +48,10 @@ const Home = () => {
                             <p>Groceries & Pets</p>
                             <p>Health & Beauty</p>
                         </div>
-                        {/* left area for mobiles */}
 
                         {/* Carousel Items */}
-{/* {/*                         <div className="relative w-[70%] h-full flex items-center justify-center max-sm:flex-col max-sm:w-[85%] ">
+                        {/* 
+                        <div className="relative w-[70%] h-full flex items-center justify-center max-sm:flex-col max-sm:w-[85%] ">
                             <Carousel className="w-[60%] h-full max-w-[1000px] max-sm:w-full max-sm:h-auto">
                                 <CarouselContent>
                                     <CarouselItem className="w-full h-full max-sm:h-auto">
@@ -74,9 +73,10 @@ const Home = () => {
                                     <CarouselNext className="bg-gray-200 rounded-full p-2" />
                                 </div>
                             </Carousel>
-                        </div> */}
+                        </div>
+                        */}
 
-                    </div> */}
+                    </div>
 
                     {/* Flash Sales section */}
                     <div className='w-[80%] ml-[5%] mt-10 h-10 flex gap-10 font-bold max-sm:flex-col'>
@@ -86,12 +86,17 @@ const Home = () => {
 
                     {/* Product Items */}
                     <div className="w-[95%] mt-[3%] h-[30%] flex items-center justify-center gap-3 flex-wrap max-sm:mt-[25vh]  max-sm:w-full max-sm:flex-col">
-                    {
-                            homeProducts.map((item)=>{
+                        {
+                            homeProducts.map((item) => {
                                 return (
-
-                                    <Item itemname={item.productName} itemprice={item.price} itempicsrc={item.productImages} itemId={item._id} className="max-sm:w-full"/>
-                                )
+                                    <Item 
+                                        itemname={item.productName} 
+                                        itemprice={item.price} 
+                                        itempicsrc={item.productImages} 
+                                        itemId={item._id} 
+                                        className="max-sm:w-full"
+                                    />
+                                );
                             })
                         }
                     </div>
@@ -111,33 +116,48 @@ const Home = () => {
 
                     {/* Product Items */}
                     <div className="w-[95%] mt-[3%] h-[30%] flex items-center justify-center gap-3 flex-wrap max-sm:mt-[34%] cursor-pointer max-sm:flex-col max-sm:w-full">
-                    {
-                            homeProducts.map((item)=>{
+                        {
+                            homeProducts.map((item) => {
                                 return (
-
-                                    <Item itemname={item.productName} itemprice={item.price} itempicsrc={item.productImages} itemId={item._id} className="max-sm:w-full"/>
-                                )
+                                    <Item 
+                                        itemname={item.productName} 
+                                        itemprice={item.price} 
+                                        itempicsrc={item.productImages} 
+                                        itemId={item._id} 
+                                        className="max-sm:w-full"
+                                    />
+                                );
                             })
                         }
-                    {
-                            homeProducts.map((item)=>{
+                        {
+                            homeProducts.map((item) => {
                                 return (
-
-                                    <Item itemname={item.productName} itemprice={item.price} itempicsrc={item.productImages} itemId={item._id} className="max-sm:w-full"/>
-                                )
+                                    <Item 
+                                        itemname={item.productName} 
+                                        itemprice={item.price} 
+                                        itempicsrc={item.productImages} 
+                                        itemId={item._id} 
+                                        className="max-sm:w-full"
+                                    />
+                                );
                             })
                         }
-                    {
-                            homeProducts.map((item)=>{
+                        {
+                            homeProducts.map((item) => {
                                 return (
-
-                                    <Item itemname={item.productName} itemprice={item.price} itempicsrc={item.productImages} itemId={item._id} className="max-sm:w-full"/>
-                                )
+                                    <Item 
+                                        itemname={item.productName} 
+                                        itemprice={item.price} 
+                                        itempicsrc={item.productImages} 
+                                        itemId={item._id} 
+                                        className="max-sm:w-full"
+                                    />
+                                );
                             })
                         }
                     </div>
-                        
-                    {/* View All Products button */}    
+
+                    {/* View All Products button */}
                     <div className="w-full flex items-center justify-center h-10 mt-[5%]">
                         <button className='w-[20%] h-12 bg-[#DD4444] text-white max-sm:w-[80%] hover:bg-[#a23030] transition-all'>
                             View All Products
@@ -169,12 +189,7 @@ const Home = () => {
                             <p className='font-poppins'>Free delivery for all orders above 150$</p>
                             <p></p>
                         </div>
-
-                        
-
                     </div>
-
-
                 </div>
             </div>
             <Footer />
