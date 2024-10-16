@@ -52,7 +52,7 @@ const Home = () => {
                         {/* left area for mobiles */}
 
                         {/* Carousel Items */}
-{/*                         <div className="relative w-[70%] h-full flex items-center justify-center max-sm:flex-col max-sm:w-[85%] ">
+{/* {/*                         <div className="relative w-[70%] h-full flex items-center justify-center max-sm:flex-col max-sm:w-[85%] ">
                             <Carousel className="w-[60%] h-full max-w-[1000px] max-sm:w-full max-sm:h-auto">
                                 <CarouselContent>
                                     <CarouselItem className="w-full h-full max-sm:h-auto">
@@ -76,7 +76,7 @@ const Home = () => {
                             </Carousel>
                         </div> */}
 
-                    </div>
+                    </div> */}
 
                     {/* Flash Sales section */}
                     <div className='w-[80%] ml-[5%] mt-10 h-10 flex gap-10 font-bold max-sm:flex-col'>
