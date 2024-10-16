@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "./Header";
 import Footer from './Footer';
-import aboutpic from "./public/images/istockphoto-1217550622-612x612.svg";
+import aboutpic from "../public/istockphoto-1217550622-612x612.svg";
 import { CiShop } from "react-icons/ci";
 import { PiCurrencyDollarSimpleFill } from "react-icons/pi";
 import { GiShoppingBag } from "react-icons/gi";
