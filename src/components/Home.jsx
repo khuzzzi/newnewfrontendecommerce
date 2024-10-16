@@ -9,7 +9,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"; // Make sure this path is correct according to your project structure
-// import banner from "./public/images/download (4).jfif";
+// import banner from "";
 // import iphoneBanner from "./public/images/iconic_STORY_LEVEL_BANNER_1600x483.jpg";
 import Item from "./Item";
 
@@ -17,9 +17,10 @@ import { TbTruckDelivery } from 'react-icons/tb';
 import { useSelector } from 'react-redux';
 
 const Home = () => {
-    const { homeProducts } = useSelector((state) => state.homeProducts);
-    console.log(homeProducts);
-    
+  
+
+    const {homeProducts} = useSelector((state)=>state.homeProducts)
+    console.log(homeProducts)
     return (
         <>
             <Header />
@@ -48,10 +49,10 @@ const Home = () => {
                             <p>Groceries & Pets</p>
                             <p>Health & Beauty</p>
                         </div>
+                        {/* left area for mobiles */}
 
                         {/* Carousel Items */}
-                        {/* 
-                        <div className="relative w-[70%] h-full flex items-center justify-center max-sm:flex-col max-sm:w-[85%] ">
+                        {/* <div className="relative w-[70%] h-full flex items-center justify-center max-sm:flex-col max-sm:w-[85%] ">
                             <Carousel className="w-[60%] h-full max-w-[1000px] max-sm:w-full max-sm:h-auto">
                                 <CarouselContent>
                                     <CarouselItem className="w-full h-full max-sm:h-auto">
@@ -73,8 +74,7 @@ const Home = () => {
                                     <CarouselNext className="bg-gray-200 rounded-full p-2" />
                                 </div>
                             </Carousel>
-                        </div>
-                        */}
+                        </div> */}
 
                     </div>
 
@@ -86,18 +86,12 @@ const Home = () => {
 
                     {/* Product Items */}
                     <div className="w-[95%] mt-[3%] h-[30%] flex items-center justify-center gap-3 flex-wrap max-sm:mt-[25vh]  max-sm:w-full max-sm:flex-col">
-                        {
-                            homeProducts.map((item) => {
+                    {
+                            homeProducts.map((item)=>{
                                 return (
-                                    <Item 
-                                        key={item._id}
-                                        itemname={item.productName} 
-                                        itemprice={item.price} 
-                                        itempicsrc={item.productImages} 
-                                        itemId={item._id} 
-                                        className="max-sm:w-full"
-                                    />
-                                );
+
+                                    <Item itemname={item.productName} itemprice={item.price} itempicsrc={item.productImages} itemId={item._id} className="max-sm:w-full"/>
+                                )
                             })
                         }
                     </div>
@@ -117,51 +111,33 @@ const Home = () => {
 
                     {/* Product Items */}
                     <div className="w-[95%] mt-[3%] h-[30%] flex items-center justify-center gap-3 flex-wrap max-sm:mt-[34%] cursor-pointer max-sm:flex-col max-sm:w-full">
-                        {
-                            homeProducts.map((item) => {
+                    {
+                            homeProducts.map((item)=>{
                                 return (
-                                    <Item 
-                                        key={item._id}
-                                        itemname={item.productName} 
-                                        itemprice={item.price} 
-                                        itempicsrc={item.productImages} 
-                                        itemId={item._id} 
-                                        className="max-sm:w-full"
-                                    />
-                                );
+
+                                    <Item itemname={item.productName} itemprice={item.price} itempicsrc={item.productImages} itemId={item._id} className="max-sm:w-full"/>
+                                )
                             })
                         }
-                        {
-                            homeProducts.map((item) => {
+                    {
+                            homeProducts.map((item)=>{
                                 return (
-                                    <Item 
-                                        key={item._id}
-                                        itemname={item.productName} 
-                                        itemprice={item.price} 
-                                        itempicsrc={item.productImages} 
-                                        itemId={item._id} 
-                                        className="max-sm:w-full"
-                                    />
-                                );
+
+                                    <Item itemname={item.productName} itemprice={item.price} itempicsrc={item.productImages} itemId={item._id} className="max-sm:w-full"/>
+                                )
                             })
                         }
-                        {
-                            homeProducts.map((item) => {
+                    {
+                            homeProducts.map((item)=>{
                                 return (
-                                    <Item 
-                                        key={item._id}
-                                        itemname={item.productName} 
-                                        itemprice={item.price} 
-                                        itempicsrc={item.productImages} 
-                                        itemId={item._id} 
-                                        className="max-sm:w-full"
-                                    />
-                                );
+
+                                    <Item itemname={item.productName} itemprice={item.price} itempicsrc={item.productImages} itemId={item._id} className="max-sm:w-full"/>
+                                )
                             })
                         }
                     </div>
-
-                    {/* View All Products button */}
+                        
+                    {/* View All Products button */}    
                     <div className="w-full flex items-center justify-center h-10 mt-[5%]">
                         <button className='w-[20%] h-12 bg-[#DD4444] text-white max-sm:w-[80%] hover:bg-[#a23030] transition-all'>
                             View All Products
@@ -175,6 +151,7 @@ const Home = () => {
                             </div>
                             <p className='text-sm font-bold font-poppins'>FREE AND FAST DELIVERY</p>
                             <p className='font-poppins'>Free delivery for all orders above 150$</p>
+                            <p></p>
                         </div>
                         <div className='flex flex-col gap-5 min-w-[23%] h-[35vh]  items-center justify-center'>
                             <div className='flex items-center justify-center bg-black h-[12vh] w-[8vw] rounded-full max-sm:min-w-[35vw]'>
@@ -182,6 +159,7 @@ const Home = () => {
                             </div>
                             <p className='text-sm font-bold font-poppins'>FREE AND FAST DELIVERY</p>
                             <p className='font-poppins'>Free delivery for all orders above 150$</p>
+                            <p></p>
                         </div>
                         <div className='flex flex-col gap-5 min-w-[23%] h-[35vh]  items-center justify-center'>
                             <div className='flex items-center justify-center bg-black h-[12vh] w-[8vw] rounded-full max-sm:min-w-[35vw]'>
@@ -189,8 +167,14 @@ const Home = () => {
                             </div>
                             <p className='text-sm font-bold font-poppins'>FREE AND FAST DELIVERY</p>
                             <p className='font-poppins'>Free delivery for all orders above 150$</p>
+                            <p></p>
                         </div>
+
+                        
+
                     </div>
+
+
                 </div>
             </div>
             <Footer />
@@ -199,4 +183,3 @@ const Home = () => {
 };
 
 export default Home;
-``
