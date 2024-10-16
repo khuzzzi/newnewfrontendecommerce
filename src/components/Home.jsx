@@ -9,8 +9,8 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"; // Make sure this path is correct according to your project structure
-import banner from "./public/images/download (4).jfif";
-import iphoneBanner from "./public/images/iconic_STORY_LEVEL_BANNER_1600x483.jpg";
+// import banner from "./public/images/download (4).jfif";
+// import iphoneBanner from "./public/images/iconic_STORY_LEVEL_BANNER_1600x483.jpg";
 import Item from "./Item";
 
 import { TbTruckDelivery } from 'react-icons/tb';
@@ -52,7 +52,7 @@ const Home = () => {
                         {/* left area for mobiles */}
 
                         {/* Carousel Items */}
-                        <div className="relative w-[70%] h-full flex items-center justify-center max-sm:flex-col max-sm:w-[85%] ">
+{/*                         <div className="relative w-[70%] h-full flex items-center justify-center max-sm:flex-col max-sm:w-[85%] ">
                             <Carousel className="w-[60%] h-full max-w-[1000px] max-sm:w-full max-sm:h-auto">
                                 <CarouselContent>
                                     <CarouselItem className="w-full h-full max-sm:h-auto">
@@ -74,7 +74,7 @@ const Home = () => {
                                     <CarouselNext className="bg-gray-200 rounded-full p-2" />
                                 </div>
                             </Carousel>
-                        </div>
+                        </div> */}
 
                     </div>
 
